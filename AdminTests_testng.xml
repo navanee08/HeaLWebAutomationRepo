@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HEAL Web Portal Automation Suite">
+
+	<listeners>
+		<listener class-name="resources.listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+		<!-- <listener class-name="resources.MyTransformer" /> -->
+	</listeners>
+
+	<test name="Regression" preserve-order="true">
+		<classes>			
+			<class name="Admin_Tests.Create_Challenge_Test" />
+			<class name="Admin_Tests.Edit_Challenge_Test" />
+			<class name="Admin_Tests.Add_Users_And_Run_Challenge_Test" />
+			<class name="Admin_Tests.View_Challenge_Points_Test" />			
+			<class name="Admin_Tests.Delete_Challenge_Test" />
+			<class name="Admin_Tests.Admin_Stats_Test" />
+		</classes>
+
+	</test>
+
+</suite> 

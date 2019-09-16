@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HEAL Web Portal Automation Suite" time-out="180000">
+
+	<listeners>
+		<listener class-name="resources.listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+		<!-- <listener class-name="resources.MyTransformer" /> -->
+	</listeners>
+
+	<test name="Running Regression for dashboard tests">
+		<classes>			
+			<class name="Dashboard_Tests.Forgot_Password_Negative_Test" />
+			<class name="Dashboard_Tests.Login_Negative_Test" />
+			<class name="Dashboard_Tests.Login_With_Single_User_Test" />
+			<class name="Dashboard_Tests.Login_With_Multiple_Users_Data_Driven_Test" />
+			<class name="Dashboard_Tests.Login_DataDriven_Through_DataProvider_Test" />			
+			<class name="Dashboard_Tests.Resend_OTP_Test" />
+			<class name="Dashboard_Tests.Signup_Negative_Test" />
+			<class name="Dashboard_Tests.Signup_Test" />
+			<class name="Dashboard_Tests.Tabs_Navigation_Test" />
+		</classes>
+
+	</test>
+
+</suite> 

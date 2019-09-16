@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="88527" started-at="2019-09-16T11:15:34Z" finished-at="2019-09-16T11:17:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="88527" started-at="2019-09-16T11:15:34Z" finished-at="2019-09-16T11:17:03Z">
+      <class name="Dashboard_Tests.Tabs_Navigation_Test">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Dashboard_Tests.Tabs_Navigation_Test@5abca1e0]" name="setUp" is-config="true" duration-ms="73522" started-at="2019-09-16T16:45:35Z" finished-at="2019-09-16T16:46:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tabsNavigation()[pri:0, instance:Dashboard_Tests.Tabs_Navigation_Test@5abca1e0]" name="tabsNavigation" duration-ms="14904" started-at="2019-09-16T16:46:48Z" finished-at="2019-09-16T16:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tabsNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Dashboard_Tests.Tabs_Navigation_Test@5abca1e0]" name="tearDown" is-config="true" duration-ms="84" started-at="2019-09-16T16:47:03Z" finished-at="2019-09-16T16:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Dashboard_Tests.Tabs_Navigation_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

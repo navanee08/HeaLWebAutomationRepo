@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HEAL Web Portal Automation Suite" >
+
+	<listeners>
+		<listener class-name="resources.listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="Regression" preserve-order="true">
+		<classes>
+			
+			<class name="com.heka.TestCases.Signup_Negative_Test" />
+			<class name="com.heka.TestCases.Signup_Test" />
+			<class name="com.heka.TestCases.Login_Negative_Test" />
+			<class name="com.heka.TestCases.Login_Test" />
+			<class name="com.heka.TestCases.Login_Test" />
+			<class name="com.heka.TestCases.Login_With_Data_Driven_Test" />
+			<class name="com.heka.TestCases.Forgot_Password_Test" />
+			<class name="com.heka.TestCases.Resend_OTP_Test" />
+			<class name="com.heka.TestCases.Tabs_Navigation_Test" />
+			<class name="com.heka.TestCases.View_Patient_Details_1Week_Test" />
+			<class name="com.heka.TestCases.View_Patient_Details_1Month_Test" />
+			<class name="com.heka.TestCases.Track_My_Patients_Instance_Message_Test" />
+			<class name="com.heka.TestCases.Patient_Diagnosis_Message_Test" />
+			<class name="com.heka.TestCases.Food_Log_Test" />
+			<class name="com.heka.TestCases.Patient_Medication_Log_Test" />
+			<class name="com.heka.TestCases.Medical_History_Edit_Test" />
+			<class name="com.heka.TestCases.Patient_Vitals_Edit_Test" />
+			<class name="com.heka.TestCases.Add_Prescription_Test" />
+			<class name="com.heka.TestCases.Delete_Prescription_Test" />
+			<class name="com.heka.TestCases.Create_Appt_Schedules_Test" />
+			<class name="com.heka.TestCases.Edit_Appt_Schedule_Test" />
+			<class name="com.heka.TestCases.Delete_Appt_Schedule_Test" />
+			<class name="com.heka.TestCases.Create_Challenge_Test" />
+			<class name="com.heka.TestCases.Edit_Challenge_Test" />
+			<class name="com.heka.TestCases.Delete_Challenge_Test" />
+			<class name="com.heka.TestCases.Admin_Stats_Test" />
+		</classes>
+	</test>
+
+	<!-- <test name="Login with invalid mobile number-Negative test">
+		<classes>
+			<class name="com.heka.TestCases.Login_Negative_Test" />
+		</classes>
+	</test>
+
+	<test name="Create appointment schedule">
+		<classes>
+			<class name="com.heka.TestCases.Create_Appt_Schedules_Test" />
+		</classes>
+	</test>
+ 
+	<test name="Edit appointment schedule">
+		<classes>
+			<class name="com.heka.TestCases.Edit_Appt_Schedule_Test" />
+		</classes>
+	</test>
+ 
+
+	<test name="Login by multiple users-Data driven test">
+		<classes>
+			<class name="com.heka.TestCases.Login_Data_Driven_Test" />
+		</classes>
+	</test>
+
+	<test name="Sign up with existing user-Negative test">
+		<classes>
+			<class name="com.heka.TestCases.Signup_Negative_Test" />
+		</classes>
+	</test>
+
+	<test name="User tabs navigating">
+		<classes>
+			<class name="com.heka.TestCases.Tabs_Navigation_Test" />
+		</classes>
+	</test>
+	
+	<test name="Send instance message to Patient">
+		<classes>
+			<class name="com.heka.TestCases.Track_My_Patients_Instance_Message_Test" />
+		</classes>
+	</test>
+	
+	<test name="Add Prescription Test">
+		<classes>
+			<class name="com.heka.TestCases.Add_Prescription_Test" />
+		</classes>
+	</test>
+	
+	<test name="Admin Stats Test">
+		<classes>
+			<class name="com.heka.TestCases.Admin_Stats_Test" />
+		</classes>
+	</test>
+	
+	<test name="Create Challenge Test">
+	     <classes>
+			<class name="com.heka.TestCases.Create_Challenge_Test" />
+		</classes>
+	</test>
+	
+	<test name="Delete Challenge Test">
+		<classes>
+			<class name="com.heka.TestCases.Delete_Challenge_Test" />
+		</classes>
+	</test>
+	
+	<test name="Delete prescription Test">
+		<classes>
+			<class name="com.heka.TestCases.Delete_Prescription_Test" />
+		</classes>
+	</test>
+	
+	<test name="Delete Appointment Schedule Test">
+		<classes>
+			<class name="com.heka.TestCases.Delete_Appt_Schedule_Test" />
+		</classes>
+	</test>
+	
+	<test name="Edit Challenge Test">
+		<classes>
+			<class name="com.heka.TestCases.Edit_Challenge_Test" />
+		</classes>
+	</test>
+	
+	<test name="Food Log Test">
+		<classes>
+			<class name="com.heka.TestCases.Food_Log_Test" />
+		</classes>
+	</test>
+	
+	<test name="Forgot Password Test">
+		<classes>
+			<class name="com.heka.TestCases.Forgot_Password_Test" />
+		</classes>
+	</test>
+	
+	<test name="Medical History Edit Test">
+		<classes>
+			<class name="com.heka.TestCases.Medical_History_Edit_Test" />
+		</classes>
+	</test>
+	
+	<test name="Patient Diagnosis Message">
+		<classes>
+			<class name="com.heka.TestCases.Patient_Diagnosis_Message_Test" />
+		</classes>
+	</test>
+	
+	<test name="Patient Medication Log Test">
+		<classes>
+			<class name="com.heka.TestCases.Patient_Medication_Log_Test" />
+		</classes>
+	</test>
+	
+	<test name="Patient Vitals Edit Test">
+		<classes>
+			<class name="com.heka.TestCases.Patient_Vitals_Edit_Test" />
+		</classes>
+	</test>
+	
+	<test name="Resend OTP Negative Test">
+		<classes>
+			<class name="com.heka.TestCases.Resend_OTP_Test" />
+		</classes>
+	</test>
+	
+	<test name="Signup Negative Test">
+		<classes>
+			<class name="com.heka.TestCases.View_Patient_Details_1Week_Test" />
+		</classes>
+	</test>
+	
+	<test name="Signup Positive Test">
+		<classes>
+			<class name="com.heka.TestCases.Signup_Test" />
+		</classes>
+	</test>
+	
+	<test name="View Patient Details For 1 Month">
+		<classes>
+			<class name="com.heka.TestCases.View_Patient_Details_1Month_Test" />
+		</classes>
+	</test>
+ -->
+
+</suite> 

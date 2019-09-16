@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HeaL Web Portal Automation Suite">
+
+	<listeners>
+		<listener class-name="resources.listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+	</listeners>
+
+	<test name="Regression Suite" preserve-order="true">
+		<classes>
+			<class name="com.heka.TestCases.Signup_Negative_Test" />
+			<class name="com.heka.TestCases.Signup_Test" />
+			<class name="com.heka.TestCases.Login_Negative_Test" />
+			<class name="com.heka.TestCases.Login_Test" />
+			<class name="com.heka.TestCases.Login_With_Data_Driven_Test" />
+			<class name="com.heka.TestCases.Forgot_Password_Test" />
+			<class name="com.heka.TestCases.Resend_OTP_Test" />
+			<class name="com.heka.TestCases.Tabs_Navigation_Test" />
+			<class name="com.heka.TestCases.View_Patient_Details_1Week_Test" />
+			<class name="com.heka.TestCases.View_Patient_Details_1Month_Test" />
+			<class name="com.heka.TestCases.Track_My_Patients_Instance_Message_Test" />
+			<class name="com.heka.TestCases.Patient_Diagnosis_Message_Test" />
+			<class name="com.heka.TestCases.Food_Log_Test" />
+			<class name="com.heka.TestCases.Patient_Medication_Log_Test" />
+			<class name="com.heka.TestCases.Medical_History_Edit_Test" />
+			<class name="com.heka.TestCases.Patient_Vitals_Edit_Test" />
+			<class name="com.heka.TestCases.Add_Prescription_Test" />
+			<class name="com.heka.TestCases.Delete_Prescription_Test" />
+			<class name="com.heka.TestCases.Create_Appt_Schedules_Test" />
+			<class name="com.heka.TestCases.Edit_Appt_Schedule_Test" />
+			<class name="com.heka.TestCases.Delete_Appt_Schedule_Test" />
+			<class name="com.heka.TestCases.Create_Challenge_Test" />
+			<class name="com.heka.TestCases.Edit_Challenge_Test" />
+			<class name="com.heka.TestCases.Delete_Challenge_Test" />
+			<class name="com.heka.TestCases.Admin_Stats_Test" />
+		</classes>
+	</test>
+
+</suite> 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HEAL Web Portal Automation Suite">
+
+	<listeners>
+		<listener class-name="resources.listeners" />
+		<listener class-name="resources.ExtentReporterNG" />
+		<listener class-name="resources.MyTransformer" />
+	</listeners>
+
+	<test name="Running regression tests of schedules module" preserve-order="true">
+		<classes>			
+			<class name="Schedules_Tests.Create_Appt_Schedules_Test" />
+			<class name="Schedules_Tests.Edit_Appt_Schedule_Test" />
+			<class name="Schedules_Tests.Delete_Appt_Schedule_Test" />			
+		</classes>
+
+	</test>
+
+</suite> 

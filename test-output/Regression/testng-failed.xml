@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <test name="Regression Test">
+    <classes>
+      <class name="com.heka.TestCases.Signup_Negative_Test"/>
+      <class name="com.heka.TestCases.Signup_Test"/>
+      <class name="com.heka.TestCases.Login_Negative_Test"/>
+      <class name="com.heka.TestCases.Login_Test"/>
+    </classes>
+  </test> <!-- Regression Test -->
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="com.heka.TestCases.Login_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="login_With_Valid_Mobile_Number"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.heka.TestCases.Login_Test -->
+      <class name="com.heka.TestCases.Login_Negative_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.heka.TestCases.Login_Negative_Test -->
+      <class name="com.heka.TestCases.Signup_Negative_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.heka.TestCases.Signup_Negative_Test -->
+      <class name="com.heka.TestCases.Signup_Test">
+        <methods>
+          <include name="signUp_Test"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.heka.TestCases.Signup_Test -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression] -->

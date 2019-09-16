@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HEAL Web Portal Automation Suite]">
+  <listeners>
+    <listener class-name="resources.listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Regression">
+    <classes>
+      <class name="Admin_Tests.Create_Challenge_Test"/>
+      <class name="Admin_Tests.Edit_Challenge_Test"/>
+      <class name="Admin_Tests.Add_Users_And_Run_Challenge_Test"/>
+      <class name="Admin_Tests.View_Challenge_Points_Test"/>
+      <class name="Admin_Tests.Delete_Challenge_Test"/>
+      <class name="Admin_Tests.Admin_Stats_Test"/>
+    </classes>
+  </test> <!-- Regression -->
+  <test name="Regression(failed)">
+    <classes>
+      <class name="Admin_Tests.Delete_Challenge_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="delete_Challenge"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Admin_Tests.Delete_Challenge_Test -->
+      <class name="Admin_Tests.Admin_Stats_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Admin_Tests.Admin_Stats_Test -->
+      <class name="Admin_Tests.Edit_Challenge_Test">
+        <methods>
+          <include name="edit_Challenge"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Admin_Tests.Edit_Challenge_Test -->
+      <class name="Admin_Tests.Create_Challenge_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Admin_Tests.Create_Challenge_Test -->
+      <class name="Admin_Tests.View_Challenge_Points_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Admin_Tests.View_Challenge_Points_Test -->
+      <class name="Admin_Tests.Add_Users_And_Run_Challenge_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Admin_Tests.Add_Users_And_Run_Challenge_Test -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [HEAL Web Portal Automation Suite] -->
